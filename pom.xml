@@ -2,68 +2,58 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.library</groupID>
-    <artifactId>Library  Registration</artifactId>
-    <version>1.O-SNAPSHOT</version>
-    <packaging>warrr</packaging>
-    <groupId>com.library</groupID>  
-    <artifactId>Library Registration</artifactId>  
-    <version>1.0-SNAPSHOT</version>
+    <groupId>LMS</groupId>
+    <artifactId>LMS</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>war</packaging>
    
-    <packaging>warrr</packaging>
+   
     <dependencies>
 
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-      
+       
          <dependency>
             <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-ap</artifactId>
-            <version>4.0.1</version>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
             <scope>provided</scope>
         </dependency>
 
-        <dependancy>
+        <dependency>
             <groupId>javax.servlet.jsp</groupId>
-            <artifactId>javax.servlet.jst-api</artifactId>
+            <artifactId>javax.servlet.jsp-api</artifactId>
             <version>2.3.3</version>
             <scope>provided</scope>
-        </dependancy>
-        <dependency>
-            <groupId>javax.abc</groupId>
-            <artifactId>not-exist-api</artifactId>
-            <version>1.0</version>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>99.99</version>
+            <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
-
-       <dependency>
-            <groupId>org.apache.tomcat</groupId>
-            <artifactId>servlett-api</artifactId>
-        </dependency>
-       
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>unit</artifactId>
-            <version>99.99</version>
-            <scope>test</scope>
-        </dependency>
-        
+		<!-- https://mvnrepository.com/artifact/jakarta.servlet/jakarta.servlet-api -->
+			<dependency>
+			    <groupId>jakarta.servlet</groupId>
+			    <artifactId>jakarta.servlet-api</artifactId>
+			    <version>6.1.0</version>
+			    <scope>provided</scope>
+			</dependency>
         <dependency>
             <groupId>org.apache.tomcat</groupId>
-            <artifactId>servlett-ap</artifactId>
-            <version>10.0.80</version>
+            <artifactId>tomcat-catalina</artifactId>
+            <version>11.0.11</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
+		<dependency>
+		    <groupId>org.apache.maven.plugins</groupId>
+		    <artifactId>maven-jar-plugin</artifactId>
+		    <version>4.0.0-beta-1</version>
+		</dependency>
     </dependencies>
 
     <build>
 
-        <finalNames>LMS</finalNames>
+        <finalName>LMS</finalName>
     </build>
 </project>
